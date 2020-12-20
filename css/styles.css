@@ -1,0 +1,352 @@
+:root {
+  --common-font: Roboto, sans-serif;
+  --logo-font: Raleway, sans-serif;
+
+  --main-bg-color: #ffffff;
+  --section-bg-color: #f5f4fa;
+  --footer-bg-color: #212121;
+  --blank-bg-color: #2f303a;
+  --border-separator-color: #ececec;
+  --interactive-element-color: #2196f3;
+  --button-color: #2196f3;
+  --current-page-color: #2196f3;
+  --button-filter-color: #f5f4fa;
+
+  --logo-font-color: #2196f3;
+  --logo-font-black: #000000;
+  --logo-font-white: #ffffff;
+  --lightondark-text-color: #ffffff;
+  --main-heading-color: #212121;
+  --nav-color: #212121;
+  --main-text-color: #757575;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --card-border-color: #eeeeee;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: var(--common-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+page-header {
+  border-bottom: 1px solid var(--border-separator-color);
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Шапка */
+.page-header  .container {
+  display: flex;
+  align-items: center;
+}
+
+/* logotype */
+.logo,
+.logo:visited {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--logo-font-black);
+}
+
+.logo > .web {
+  color: var(--logo-font-color);
+}
+
+.address > .logo {
+    color: var(--logo-font-white);
+}
+
+.navigation .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+/* Навигация */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .link,
+.navigation .link:visited,
+.contacts-list .link,
+.contacts-list .link:visited {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  display: flex;
+}
+
+.page-header .link {
+  display: flex;
+  margin-left: auto;
+}
+
+.pages-list .link,
+.contacts-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header .pages-list > .item:not(:last-child),
+.page-header .contacts-list > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.pages-list .link:hover,
+.pages-list .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--interactive-element-color);
+}
+
+.link.current-page {
+  color: var(--interactive-element-color);
+}
+/* Герой */
+.hero {
+  background-color: #2f303a;;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.hero .button-order {
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover,
+.btn:focus {
+  filter: saturate(150%);
+}
+
+/* Особенности */
+.visual-hidden {
+    display: none;
+}
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list > .item {
+  max-width: 270px;
+}
+
+.features-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-heading,
+.feature-description {
+  margin: 0;
+}
+
+.feature-heading {
+  margin-bottom: 10px;
+}
+
+.features-list .feature-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-heading-color);
+}
+
+/* Чем мы занимаемся */
+.directions-section {
+  padding-bottom: 94px;
+}
+.directions-heading,
+.team-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--main-heading-color);
+}
+
+.directions-heading {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.directions-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.directions-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--section-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-heading {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.teammates-list {
+  display: flex;
+  font-size: 0;
+}
+
+.teammates-list > .item {
+  max-width: 270px;
+  background: var(--main-bg-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.teammates-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.teammates-list .teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-heading-color);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.teammates-list .teammate-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  margin: 0;
+}
+
+/* Подвал */
+
+.foot {
+  background-color: #2f303a;
+}
+.foot-adress {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+.foot .link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.foot .link:hover,
+.foot .link:focus {
+  color: #2196f3;
+}
+.foot .logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1;
+  color: #ffffff;
+}
+/* Проекты */
+.progect .head {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.progect .text {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
